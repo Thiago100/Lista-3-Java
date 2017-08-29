@@ -1,0 +1,13 @@
+import java.util.Scanner;
+import java.io.*;
+public class Main{
+	public static void main(String[] args){
+	    PrintStream sa=System.out;
+        Scanner sc = new Scanner(System.in);
+           	int a,x=sc.nextInt(),in=0,ou=0;
+           	for(int i=1;i<=x;i++){
+                if(i%2==0) sa.printf("%d^2 = %.0f\n",i,Math.pow(i,2));
+           	}
+
+	}
+}
