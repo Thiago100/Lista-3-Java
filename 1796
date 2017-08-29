@@ -1,0 +1,15 @@
+import java.util.Scanner;
+import java.io.*;
+public class Main{
+	public static void main(String[] args){
+	    PrintStream sa=System.out;
+        Scanner sc = new Scanner(System.in);
+        int b,a=sc.nextInt(),p=0,x=0;
+        for (int i=0;i<a;i++){
+            b = sc.nextInt();
+            if(b == 0) p++; else x++;
+        }
+        if(p>x) sa.println("Y");else sa.println("N");
+
+	}
+}
