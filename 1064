@@ -1,0 +1,19 @@
+import java.util.Scanner;
+import java.io.*;
+public class Main{
+	public static void main(String[] args){
+	    PrintStream sa=System.out;
+        Scanner sc = new Scanner(System.in);
+            double a,m=0,b=0;
+            int x=1,p=0;
+            for(x=1;x<=6;x++){
+                a = sc.nextDouble();
+                if(a>0){
+                p = p+1;
+                b = b+a;
+                }
+                m = b/p;
+            }
+            sa.printf("%d valores positivos\n%.1f\n",p,m);
+	}
+}
