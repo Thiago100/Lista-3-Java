@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+import java.io.*;
+
+public class Main{
+	public static void main(String[] args){
+        PrintStream sa = System.out;
+        Scanner sc = new Scanner(System.in);
+        int x,i,y,z,c=0;
+        x = sc.nextInt();y=sc.nextInt();
+        if(x>y){
+            for(i=y;i<=x;i++){
+                if(i%13 !=0){
+                    c = c+i;
+                }
+            }
+        }else{
+            for(i=x;i<=y;i++){
+                if(i%13 !=0){
+                    c = c+i;
+                }
+            }
+        }
+        sa.printf("%d\n",c);
+
+	}
+}
