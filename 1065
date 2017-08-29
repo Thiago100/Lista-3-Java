@@ -1,0 +1,14 @@
+import java.util.Scanner;
+import java.io.*;
+public class Main{
+	public static void main(String[] args){
+	    PrintStream sa=System.out;
+        Scanner sc = new Scanner(System.in);
+            int a,x=0;
+            for(int i=0;i<5;i++){
+                a = sc.nextInt();
+                if(a%2==0)x++;
+            }
+            sa.println(x+" valores pares");
+	}
+}
