@@ -1,0 +1,21 @@
+import java.util.Scanner;
+import java.io.*;
+public class Main {
+    public static void main(String[] args) {
+		PrintStream sa = System.out;
+		Scanner sc = new Scanner(System.in);
+		int n=sc.nextInt(),x,y,i,l=1,s=0,j;
+		for(i=0;i<n;i++){
+		x=sc.nextInt();y=sc.nextInt();
+		for(j=x;l<=y;j++)
+			if(j%2==1 || j%2==-1){
+				l++;
+				s+=j;
+			}
+			sa.printf("%d\n",s);
+			l=1;
+			s=0;
+		}
+		
+   }
+}
