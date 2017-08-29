@@ -1,0 +1,29 @@
+import java.util.Scanner;
+import java.io.*;
+public class Main {
+    public static void main(String[] args) {
+		PrintStream sa = System.out;
+		Scanner sc = new Scanner(System.in);
+		int i=0,t=0,v=sc.nextInt(),n,x,y,j;
+		for(i=0;i<v;i++){
+			t = 0;
+			x=sc.nextInt();y=sc.nextInt();
+				if(x>y){
+					for(j=y;j<x;j++){
+						if(j % 2==1 && j!=y){
+							t += j;
+						}
+					}
+				}
+				if(x<y){
+					for(j=x;j<y;j++){
+						if(j % 2==1 && j!=x){
+							t += j;
+						}
+					}
+				}
+			sa.printf("%d\n",t);
+		}
+		
+   }
+}
