@@ -1,0 +1,16 @@
+import java.util.Scanner;
+import java.io.*;
+public class Main{
+	public static void main(String[] args){
+	    PrintStream sa=System.out;
+        Scanner sc = new Scanner(System.in);
+            int x=0;
+            double a;
+            for(int i=0;i<6;i++){
+                a = sc.nextDouble();
+                if(a>=0) x++;
+            }
+            sa.println(x+" valores positivos");
+
+	}
+}
