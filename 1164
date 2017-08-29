@@ -1,0 +1,19 @@
+import java.util.Scanner;
+import java.io.*;
+public class Main {
+    public static void main(String[] args) {
+		PrintStream sa = System.out;
+		Scanner sc = new Scanner(System.in);
+		long n = sc.nextLong(),a,j,x=0;
+		for(int i=0;i<n;i++){
+			a = sc.nextLong();
+			for(j=1;j<a;j++){
+				if(a%j==0) x+=j;
+			}
+			if(x==a) sa.println(a+" eh perfeito");
+			else sa.println(a+" nao eh perfeito");
+			x=0;
+		}
+        
+   }
+}
