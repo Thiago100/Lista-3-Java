@@ -1,0 +1,21 @@
+import java.util.Scanner;
+import java.io.*;
+public class Main{
+	public static void main(String[] args){
+	    PrintStream sa=System.out;
+        Scanner sc = new Scanner(System.in);
+        int a=sc.nextInt(),b,dois=0,treis=0,quatro=0,cinco=0;
+        for(int i=0;i<a;i++){
+                b = sc.nextInt();
+                if(b%2==0) dois++;
+                if(b%3==0) treis++;
+                if(b%4==0) quatro++;
+                if(b%5==0) cinco++;
+        }
+        sa.println(dois+" Multiplo(s) de 2");
+        sa.println(treis+" Multiplo(s) de 3");
+        sa.println(quatro+" Multiplo(s) de 4");
+        sa.println(cinco+" Multiplo(s) de 5");
+
+	}
+}
