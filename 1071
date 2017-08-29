@@ -1,0 +1,27 @@
+import java.util.Scanner;
+import java.io.*;
+public class Main {
+    public static void main(String[] args) {
+		PrintStream sa = System.out;
+		Scanner sc = new Scanner(System.in);
+		int soma=0,x=sc.nextInt(),y=sc.nextInt();
+		if(x>y){
+			if(y%2==0)y=y+1;
+			else y=y+2;
+			while(y<x){
+				soma=y+soma;
+				y=y+2;		
+			}
+		}
+		if(x<y){
+			if(x%2==0) x=x+1;
+			else x=x+2;		
+			while(y>x){	
+				soma=x+soma;
+				x=x+2;
+			}		
+		}
+	sa.printf("%d\n",soma);
+		
+   }
+}
