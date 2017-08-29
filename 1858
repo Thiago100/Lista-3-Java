@@ -1,0 +1,21 @@
+import java.util.Scanner;
+import java.io.*;
+public class Main {
+    public static void main(String[] args) {
+		PrintStream sa = System.out;
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		int min = 21, r = 0, x, i;
+
+		for (i = 1; i <= n; i++) {
+			x = sc.nextInt();
+			if(min > x) {
+				min = x;
+				r = i;
+			}
+		}
+
+		sa.println(r);
+        
+   }
+}
